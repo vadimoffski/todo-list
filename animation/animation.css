@@ -1,0 +1,159 @@
+/* animationImgs */
+.show__imac {
+  animation: imac 2s ease-in-out;
+}
+
+@keyframes imac {
+  from {
+    top: -40%;
+  }
+  50% {
+    top: 30px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.show__sp-r {
+  animation: sp-r 2s ease-in-out;
+}
+.show__sp-l {
+  animation: sp-l 2s ease-in-out;
+}
+
+@keyframes sp-r {
+  from {
+    right: -50%;
+  }
+  50% {
+    right: 20%;
+  }
+}
+@keyframes sp-l {
+  from {
+    left: -50%;
+  }
+  50% {
+    left: 20%;
+  }
+}
+
+.show__wacom {
+  animation: wacom 3s ease-in-out;
+}
+@keyframes wacom {
+  from {
+    top: 100%;
+    right: -20%;
+    transform: rotate(-60deg);
+  }
+  50% {
+  }
+}
+
+.show__st {
+  animation: st 2s ease-in-out;
+}
+@keyframes st {
+  from {
+    right: -10%;
+    transform: rotate(60deg);
+  }
+}
+
+.show__cup,
+.show__corc {
+  animation: corc 4s ease-in-out;
+}
+
+@keyframes corc {
+  from {
+    right: -10%;
+    transform: rotate(360deg);
+  }
+}
+.show__key {
+  animation: key 3s ease-in-out;
+}
+@keyframes key {
+  from {
+    top: -150%;
+    left: -20%;
+    transform: rotate(180deg);
+  }
+}
+
+.show__notebook {
+  animation: notebook 2s ease-in-out;
+}
+@keyframes notebook {
+  from {
+    left: -10%;
+    opacity: 0;
+  }
+}
+.show__penc {
+  animation: pencil 2s ease-in-out;
+}
+@keyframes pencil {
+  from {
+    transform: translate(20px, 0);
+  }
+}
+.show__gl {
+  animation: pencil 2s ease-in-out;
+}
+
+.show__title {
+  animation: title 5s ease-in-out;
+}
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.jump__title {
+  animation: jittery 4s infinite;
+}
+.jump__title:hover {
+  animation: heartbeat 0.3s infinite;
+  background-color: crimson;
+  cursor: pointer;
+}
+@keyframes heartbeat {
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+@keyframes jittery {
+  5%,
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  10% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  15% {
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+  20% {
+    transform: translate(-50%, -50%) scale(1.15) rotate(-5deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) scale(1.15) rotate(5deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1.15) rotate(-3deg);
+  }
+  35% {
+    transform: translate(-50%, -50%) scale(1.15) rotate(2deg);
+  }
+  40% {
+    transform: translate(-50%, -50%) scale(1.15) rotate(0);
+  }
+}

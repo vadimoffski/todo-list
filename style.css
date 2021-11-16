@@ -1,0 +1,252 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.wrapper {
+  min-height: 100vh;
+  max-width: 1190px;
+  padding: 0 5px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* img */
+.space {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+.space__bg {
+  max-width: 100%;
+  border-radius: 15px;
+}
+.space__imac {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 600px;
+  z-index: 10;
+}
+.space__corc {
+  position: fixed;
+  top: 40%;
+  right: 8%;
+  transform: rotate(25deg);
+}
+.space__cup {
+  position: absolute;
+  top: 40%;
+  right: 6%;
+}
+.space__key {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 350px;
+  z-index: 5;
+}
+.space__sp-l {
+  position: absolute;
+  top: -15%;
+  left: 15%;
+}
+.space__sp-r {
+  position: absolute;
+  top: -15%;
+  right: 17%;
+}
+.space__notebook {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  transform: rotate(15deg);
+}
+.space__penc {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: rotate(20deg);
+}
+.space__gl {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  transform: rotate(-40deg);
+}
+.space__st {
+  position: absolute;
+  top: 70%;
+  right: 10%;
+  z-index: 1;
+  transform: rotate(45deg);
+}
+.space__wacom {
+  position: absolute;
+  top: 70%;
+  right: 10%;
+  transform: rotate(40deg);
+}
+
+/* text */
+.space-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 30px;
+  background-color: slategrey;
+  border: 1px solid white;
+  border-radius: 10px;
+  z-index: 50;
+  font-size: 30px;
+}
+.space-title__bold {
+  color: salmon;
+}
+.remove {
+  display: none;
+}
+.show {
+  display: block;
+}
+/* todo */
+.todos-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(112, 128, 144, 0.836);
+  z-index: 20;
+  border-radius: 10px;
+  height: 100%;
+  padding: 0 100px;
+  overflow-y: scroll;
+}
+
+.todos-wrapper::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+.todos-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
+}
+
+.todos-wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+.todos-title {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+}
+.todos-desc {
+  display: flex;
+  margin-bottom: 30px;
+}
+.todos-input {
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  padding: 0 15px;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.add-task-btn {
+  padding: 10px 40px;
+  outline: none;
+  background-color: tomato;
+  color: inherit;
+  font-size: 19px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.add-task-btn:hover {
+  background-color: orangered;
+}
+
+/* todo-item */
+.checked {
+  opacity: 0.5;
+}
+.todo-item.delition {
+  animation: opacity 1s ease;
+}
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.closeTodo {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: crimson;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.closeTodo:hover {
+  background-color: darkred;
+}
+.todo-item {
+  padding: 10px 10px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #333;
+  margin-bottom: 10px;
+}
+.desc {
+  color: darkslategray;
+  font-size: 20px;
+  line-height: 26px;
+}
+.btn-complete {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+  outline: darkred;
+}
+.btn-delete {
+  cursor: pointer;
+  background-color: crimson;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.btn-delete:hover {
+  background-color: rgb(185, 21, 54);
+}
